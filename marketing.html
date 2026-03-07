@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>bob — Marketing Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0a0a0f; color:#f1f5f9; font-family:'Space Grotesk',sans-serif; }
+  .page { max-width:960px; margin:0 auto; padding:64px 48px; }
+  h1 { font-size:40px; font-weight:900; letter-spacing:-2px; margin-bottom:6px; }
+  h2 { font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#FFFF00; margin-bottom:8px; margin-top:56px; }
+  h3 { font-size:20px; font-weight:800; color:#f1f5f9; margin-bottom:4px; }
+  p  { font-size:13px; color:#64748b; line-height:1.7; margin-bottom:16px; }
+  .divider { height:1px; background:#1e293b; margin:48px 0; }
+  .card  { background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:24px; margin-bottom:16px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+  .tag  { display:inline-block; font-size:10px; font-weight:700; padding:2px 8px; border-radius:5px; margin-right:4px; }
+  .tag-free   { background:#16a34a22; border:1px solid #16a34a55; color:#4ade80; }
+  .tag-paid   { background:#f97316
+22; border:1px solid #f9731655; color:#fb923c; }
+  .tag-effort { background:#8b5cf622; border:1px solid #8b5cf655; color:#a78bfa; }
+  .day  { border-left:3px solid #FFFF00; padding:14px 18px; margin-bottom:8px; border-radius:0 10px 10px 0; background:#0f172a; }
+  .day-label { font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#FFFF00; margin-bottom:4px; }
+  .day-title { font-size:15px; font-weight:700; color:#f1f5f9; margin-bottom:6px; }
+  .day-body  { font-size:13px; color:#94a3b8; line-height:1.7; }
+  .day-body li { margin-left:18px; margin-bottom:3px; }
+  .stat { text-align:center; }
+  .stat-n { font-size:32px; font-weight:900; color:#FFFF00; line-height:1; }
+  .stat-l { font-size:11px; color:#64748b; margin-top:4px; }
+  .cost-row { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #1e293b; font-size:13px; }
+  .cost-row:last-child { border-bottom:none; }
+  .cost-item { color:#94a3b8; }
+  .cost-price { font-weight:700; color:#f1f5f9; font-family:'Space Mono'; }
+  .phase-header { display:flex; align-items:center; gap:16px; margin-bottom:24px; flex-wrap:wrap; }
+  .phase-badge { background:#FFFF0015; border:2px solid #FFFF00; color:#FFFF00; font-size:11px; font-weight:800; padding:6px 14px; border-radius:8px; letter-spacing:0.1em; text-transform:uppercase; }
+  .phase-dur { font-size:13px; color:#64748b; }
+  .phase-goal { font-size:14px; color:#f1f5f9; font-weight:600; }
+  table { width:100%; border-collapse:collapse; }
+  td,th { padding:10px 12px; text-align:left; border-bottom:1px solid #1e293b; font-size:13px; }
+  th { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:#475569; font-weight:600; }
+  tr:last-child td { border-bottom:none; }
+  .hl { background:#FFFF0010; border:1px solid #FFFF0030; border-radius:10px; padding:16px 20px; margin-bottom:16px; }
+  .logo { position:relative; display:inline-flex; align-items:center; justify-content:center; width:70px; height:26px; background:#FFFF00; border-radius:6px; }
+  .logo::after { content:''; position:absolute; inset:4px; background:#0a0a0f; border-radius:2px; }
+  .logo span { position:relative; z-index:1; font-weight:900; font-size:12px; color:#FFFF00; letter-spacing:-0.5px; }
+  a { color:#FFFF00; }
+  @media(max-width:700px){ .grid2,.grid3{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:56px;flex-wrap:wrap;gap:24px;">
+  <div>
+    <div class="logo"><span>bob</span></div>
+    <h1 style="margin-top:12px;">Marketing Plan</h1>
+    <p style="margin-top:4px; font-size:14px; color:#475569;">Pre-launch → Launch → Growth | Day-by-day with costs</p>
+  </div>
+  <div class="grid3" style="gap:24px;">
+    <div class="stat"><div class="stat-n">90</div><div class="stat-l">day plan</div></div>
+    <div class="stat"><div class="stat-n">$2K</div><div class="stat-l">est. total budget</div></div>
+    <div class="stat"><div class="stat-n">10K</div><div class="stat-l">download goal</div></div>
+  </div>
+</div>
+
+<!-- HIGH LEVEL SUMMARY -->
+<h2>High Level Picture</h2>
+<h3 style="font-size:26px; margin-bottom:16px;">Three waves. Each bigger than the last.</h3>
+
+<div class="grid3" style="margin-bottom:32px;">
+  <div class="card" style="border-top:3px solid #FFFF00;">
+    <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#FFFF00;margin-bottom:8px;">Wave 1</div>
+    <div style="font-size:16px;font-weight:800;margin-bottom:6px;">Bob Board Launch</div>
+    <div style="font-size:12px;color:#64748b;">Product Hunt + HN + Reddit<br>Target: 1,000 downloads<br>Week 1</div>
+  </div>
+  <div class="card" style="border-top:3px solid #a78bfa;">
+    <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#a78bfa;margin-bottom:8px;">Wave 2</div>
+    <div style="font-size:16px;font-weight:800;margin-bottom:6px;">Bob Net Launch</div>
+    <div style="font-size:12px;color:#64748b;">"Free AIM for Mac devs"<br>Target: 3,000 total downloads<br>Month 2</div>
+  </div>
+  <div class="card" style="border-top:3px solid #4ade80;">
+    <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#4ade80;margin-bottom:8px;">Wave 3</div>
+    <div style="font-size:16px;font-weight:800;margin-bottom:6px;">Agent Bob Pro</div>
+    <div style="font-size:12px;color:#64748b;">"One-click AI on your Mac"<br>Target: $5K MRR<br>Month 3</div>
+  </div>
+</div>
+
+<div class="hl">
+  <div style="font-size:14px;font-weight:700;color:#FFFF00;margin-bottom:6px;">The core strategy</div>
+  <div style="font-size:13px;color:#94a3b8;line-height:1.7;">
+    Dev community first (HN, r/macapps) → they download and share → general audience follows.
+    Each major feature launch is a new press cycle. Three launches = three spikes in coverage.
+    Bob Net adds network effects. Agent Bob Pro adds recurring revenue. $BOB economy makes users evangelists.
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ── PHASE 0 ── -->
+<h2>Phase 0 — Pre-Launch Preparation</h2>
+<div class="phase-header">
+  <div class="phase-badge">2 Weeks</div>
+  <div>
+    <div class="phase-goal">Goal: Everything ready to fire on day 0. No scrambling.</div>
+    <div class="phase-dur">Days -14 through -1 · Budget: ~$50</div>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day -14 to -12</div>
+  <div class="day-title">Accounts + Assets</div>
+  <div class="day-body"><ul>
+    <li>Create @BobBoardApp on X/Twitter — start posting build content immediately</li>
+    <li>Create YouTube channel — "Bob Board" with logo</li>
+    <li>Set up Plausible.io analytics on bobbrowser.com ($9/mo) — you need data from day 1</li>
+    <li>Set up email list on Resend or Mailchimp (free tier)</li>
+    <li>Add "Get notified at launch" email capture to bobbrowser.com</li>
+    <li>Create r/BobBoard subreddit — even if empty, claim it now</li>
+    <li>Screenshot every app — clean, dark background, consistent style</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day -11 to -9</div>
+  <div class="day-title">Demo Video + Landing Page Polish</div>
+  <div class="day-body"><ul>
+    <li>Record 60-second demo: open Bob Board → hotkey → Clipboard Bob → Color Bob → Agent Bob doing a real task. No narration needed. Music + text overlays. Fast cuts.</li>
+    <li>Upload to YouTube (unlisted for now)</li>
+    <li>Short 15-sec version for TikTok/Reels/Twitter</li>
+    <li>Update bobbrowser.com: hero video embed, download button above fold, email capture</li>
+    <li>Add social proof section: "Built 36 tools, runs 100% locally"</li>
+    <li>Record Loom walkthrough (2 min) for Indie Hackers post later</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day -8 to -6</div>
+  <div class="day-title">Community Seeding</div>
+  <div class="day-body"><ul>
+    <li>Post in r/macapps: "I've been building this for 3 months — would love early feedback" (NOT a launch post — genuine preview)</li>
+    <li>Post teaser on Twitter: "Shipping something I've been building for months. 36 local-first Mac tools. No cloud. No subscription. Next week." Pin it.</li>
+    <li>Find a top Product Hunt hunter (Rohan Verma, Kevin William David) — DM them to hunt Bob Board</li>
+    <li>Join 10 Mac/dev Discord servers and become a regular member BEFORE posting about Bob</li>
+    <li>Find 5 Mac productivity newsletters — email them a press kit and offer exclusive early access</li>
+    <li>DM 3-5 Mac YouTubers (MKBHD too big, target 10K-100K subs: MacMost, Snazzy Labs, etc.)</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day -5 to -3</div>
+  <div class="day-title">Launch Assets + HN Draft</div>
+  <div class="day-body"><ul>
+    <li>Write Show HN post — keep it personal: "Show HN: I built 36 free Mac tools to replace Raycast". Tell the story.</li>
+    <li>Write the r/macapps launch post — lead with the "no cloud, no subscription" angle. Include GIF of the most impressive feature.</li>
+    <li>Prepare Product Hunt listing: headline, tagline, gallery (5 screenshots), 60-sec demo video, maker comment</li>
+    <li>Create a press kit folder: logo PNG, app screenshots, 1-para description, Gravy's name/contact</li>
+    <li>Schedule 5 tweets to go out day-of at 1hr intervals</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day -2 to -1</div>
+  <div class="day-title">Final Check</div>
+  <div class="day-body"><ul>
+    <li>Test download flow end-to-end on a clean Mac — nothing broken</li>
+    <li>Confirm Product Hunt hunter is ready for 12:01AM PST</li>
+    <li>Brief 3 friends to upvote PH and comment in the first hour (first hour is critical)</li>
+    <li>Write personal launch message for Discord communities</li>
+    <li>Set phone alarm for 5:45AM — you want to be awake when HN votes start</li>
+  </ul></div>
+</div>
+
+<div class="card">
+  <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#FFFF00;margin-bottom:12px;">Phase 0 Costs</div>
+  <div class="cost-row"><span class="cost-item">Plausible.io analytics</span><span class="cost-price">$9/mo</span></div>
+  <div class="cost-row"><span class="cost-item">Screen recording / editing (ScreenFlow or Descript)</span><span class="cost-price">$0 (free trial) or $29 one-time</span></div>
+  <div class="cost-row"><span class="cost-item">Email list (Mailchimp free tier)</span><span class="cost-price">$0</span></div>
+  <div class="cost-row"><span class="cost-item">bobbrowser.com domain (if not owned)</span><span class="cost-price">$12/yr</span></div>
+  <div class="cost-row"><span class="cost-item">Time investment</span><span class="cost-price">~25 hours over 2 weeks</span></div>
+  <div class="cost-row" style="border-top:1px solid #334155;margin-top:8px;padding-top:12px;"><span style="font-weight:700;color:#f1f5f9;">Total Phase 0</span><span class="cost-price">~$50</span></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ── PHASE 1 ── -->
+<h2>Phase 1 — Launch Week</h2>
+<div class="phase-header">
+  <div class="phase-badge">7 Days</div>
+  <div>
+    <div class="phase-goal">Goal: 1,000 downloads. Front page of HN or PH top 5.</div>
+    <div class="phase-dur">Days 0–7 · Budget: ~$100</div>
+  </div>
+</div>
+
+<div class="day" style="border-left-color:#FFFF00;">
+  <div class="day-label">Day 0 — Launch Day (This is the whole game)</div>
+  <div class="day-title">Hit all channels within 6 hours of each other</div>
+  <div class="day-body"><ul>
+    <li><strong style="color:#FFFF00;">12:01 AM PST</strong> — Product Hunt goes live. Your hunter posts it. You immediately post the maker comment with the full story + link to demo video. This first hour matters most.</li>
+    <li><strong style="color:#FFFF00;">6:00 AM PST</strong> — Post Show HN. Title: <em>"Show HN: I built 36 free Mac tools that run entirely offline — no cloud, no subscription"</em>. Comment immediately with context. Respond to every reply same day.</li>
+    <li><strong style="color:#FFFF00;">7:00 AM PST</strong> — Post r/macapps. Lead with the most impressive GIF (Color Bob live picker or Agent Bob doing a task). Title: <em>"I spent 3 months building 36 free Mac apps so you don't need Raycast, CleanShot, or TextExpander"</em></li>
+    <li><strong style="color:#FFFF00;">8:00 AM PST</strong> — Post on r/programming and r/webdev</li>
+    <li><strong style="color:#FFFF00;">9:00 AM PST</strong> — Twitter/X thread: "Today I'm launching bob board. Here's why I built it, what it does, and why it's free." 8-tweet thread with screenshots. Pin to profile.</li>
+    <li><strong style="color:#FFFF00;">10:00 AM PST</strong> — Post in Mac Discord communities (MacAdmins, Developer Discord servers)</li>
+    <li><strong style="color:#FFFF00;">All day</strong> — Reply to EVERY comment on PH, HN, Reddit. Same-day response is what makes launches viral. People share posts that the founder is active in.</li>
+    <li>Post the 15-sec demo to TikTok and Instagram Reels</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day 1–2</div>
+  <div class="day-title">Ride the wave + fix things</div>
+  <div class="day-body"><ul>
+    <li>Post a "day 1 results" tweet — download number, top comment, what surprised you. This performs very well.</li>
+    <li>Fix any critical bugs immediately — post update publicly. Shows responsiveness.</li>
+    <li>Find everyone who tweeted about it and reply personally</li>
+    <li>Post in Indie Hackers: "Launched yesterday — here's what happened (numbers inside)"</li>
+    <li>Thank the hunters, commenters, and community publicly</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day 3–4</div>
+  <div class="day-title">Secondary communities</div>
+  <div class="day-body"><ul>
+    <li>Post on r/productivity — different audience than r/macapps</li>
+    <li>Post on r/MacOS</li>
+    <li>Dev.to article: "How I replaced my $300/yr Mac tool stack with one free app I built"</li>
+    <li>Post in Slack/Discord communities: MacAdmins, Frontend Horse, Reactiflux</li>
+    <li>Email the 5 newsletters you reached out to pre-launch with final launch stats</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Day 5–7</div>
+  <div class="day-title">Sustain + recap</div>
+  <div class="day-body"><ul>
+    <li>Post week-1 transparency report on Twitter and Indie Hackers: exact download numbers, where traffic came from, what worked</li>
+    <li>This post often gets MORE engagement than the launch itself — makers love transparency</li>
+    <li>Short YouTube video: "First week results + what's coming next"</li>
+    <li>Start collecting testimonials — DM happy users for a quote</li>
+    <li>Start Bob Net waitlist — "Join early access" landing page</li>
+  </ul></div>
+</div>
+
+<div class="card">
+  <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#FFFF00;margin-bottom:12px;">Phase 1 Costs</div>
+  <div class="cost-row"><span class="cost-item">Product Hunt (organic)</span><span class="cost-price">$0</span></div>
+  <div class="cost-row"><span class="cost-item">Hacker News (organic)</span><span class="cost-price">$0</span></div>
+  <div class="cost-row"><span class="cost-item">Reddit (organic posts)</span><span class="cost-price">$0</span></div>
+  <div class="cost-row"><span class="cost-item">Optional: $50 Reddit promoted post on r/macapps to boost day-1 visibility</span><span class="cost-price">$0–$50</span></div>
+  <div class="cost-row"><span class="cost-item">Time — Day 0 is a full work day, days 1-7 are 2-3hrs/day</span><span class="cost-price">~30 hours</span></div>
+  <div class="cost-row" style="border-top:1px solid #334155;margin-top:8px;padding-top:12px;"><span style="font-weight:700;color:#f1f5f9;">Total Phase 1</span><span class="cost-price">$0–$100</span></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ── PHASE 2 ── -->
+<h2>Phase 2 — Post-Launch Momentum</h2>
+<div class="phase-header">
+  <div class="phase-badge">3 Weeks</div>
+  <div>
+    <div class="phase-goal">Goal: 3,000 total downloads. 200 email subscribers. First paying users.</div>
+    <div class="phase-dur">Days 8–30 · Budget: ~$500–$1,000</div>
+  </div>
+</div>
+
+<div class="grid2">
+
+<div>
+<div class="day">
+  <div class="day-label">Week 2 (Days 8–14)</div>
+  <div class="day-title">Media + Influencers</div>
+  <div class="day-body"><ul>
+    <li>Publish YouTube demo video (full 3-min walkthrough)</li>
+    <li>Submit to TLDR Newsletter (~130K devs, $300–500/issue) — highest ROI newsletter for this audience</li>
+    <li>Submit to Sidebar.io (free, design/dev audience)</li>
+    <li>Submit to Hacker Newsletter (free)</li>
+    <li>DM 5 Mac YouTubers offering free lifetime access + story angle</li>
+    <li>Post TikTok: "I replaced a $300/yr app stack with something free" — these go viral</li>
+    <li>Start Agent Bob Pro waitlist — capture emails</li>
+  </ul></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Week 3 (Days 15–21)</div>
+  <div class="day-title">Content + Paid Test</div>
+  <div class="day-body"><ul>
+    <li>Publish Indie Hackers deep-dive: "How I built 36 Mac apps and the stack I used"</li>
+    <li>Run $100 test on Twitter/X Ads targeting: Mac, developer, productivity interests</li>
+    <li>Run $50 test on Reddit Ads targeting r/macapps, r/MacOS</li>
+    <li>Publish Medium article — cross-post to Dev.to and Hashnode</li>
+    <li>AppSumo outreach — submit Bob Board for a lifetime deal ($49 one-time, AppSumo takes 70% but sends massive traffic)</li>
+    <li>Post in Mastodon tech communities (large cross-section of privacy-focused devs)</li>
+  </ul></div>
+</div>
+</div>
+
+<div>
+<div class="day">
+  <div class="day-label">Week 4 (Days 22–30)</div>
+  <div class="day-title">Bob Net Launch Prep + Revenue</div>
+  <div class="day-body"><ul>
+    <li>Launch Agent Bob Pro soft beta — email waitlist only, $9.99/mo, cap at 50 users</li>
+    <li>Announce Bob Net coming soon — "P2P chat for Bob users, no email required"</li>
+    <li>Analyze paid ad results — double down on what works, kill what doesn't</li>
+    <li>Podcast outreach: Indie Hackers Podcast, Build Your SaaS, Syntax.fm — pitch "I replaced Raycast with my own tools" angle</li>
+    <li>Tweet month-1 transparency report — downloads, revenue, plans</li>
+    <li>Set up referral system: share your link → friend downloads → you both get $BOB</li>
+  </ul></div>
+</div>
+
+<div class="card">
+  <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#FFFF00;margin-bottom:12px;">Phase 2 Costs</div>
+  <div class="cost-row"><span class="cost-item">TLDR Newsletter sponsorship</span><span class="cost-price">$300–500</span></div>
+  <div class="cost-row"><span class="cost-item">Twitter/X Ads test</span><span class="cost-price">$100</span></div>
+  <div class="cost-row"><span class="cost-item">Reddit Ads test</span><span class="cost-price">$50–100</span></div>
+  <div class="cost-row"><span class="cost-item">Sidebar.io, Hacker Newsletter</span><span class="cost-price">$0</span></div>
+  <div class="cost-row"><span class="cost-item">YouTube / content creation</span><span class="cost-price">$0</span></div>
+  <div class="cost-row" style="border-top:1px solid #334155;margin-top:8px;padding-top:12px;"><span style="font-weight:700;color:#f1f5f9;">Total Phase 2</span><span class="cost-price">$500–$700</span></div>
+</div>
+</div>
+
+</div>
+
+<div class="divider"></div>
+
+<!-- ── PHASE 3 ── -->
+<h2>Phase 3 — Sustained Growth</h2>
+<div class="phase-header">
+  <div class="phase-badge">Month 2–3</div>
+  <div>
+    <div class="phase-goal">Goal: 10,000 downloads. $5K MRR. Bob Net live. $BOB token design started.</div>
+    <div class="phase-dur">Days 31–90 · Budget: ~$500–$1,000/mo</div>
+  </div>
+</div>
+
+<table style="margin-bottom:24px;">
+  <tr><th>Channel</th><th>Action</th><th>Cost</th><th>Expected reach</th></tr>
+  <tr><td>Twitter/X</td><td>3 posts/week — tips, builds, transparency</td><td>$0 organic / $200/mo ads</td><td>Compound — each post builds audience</td></tr>
+  <tr><td>YouTube</td><td>1 video/week — Bob tips, feature reveals</td><td>$0</td><td>100–1K views/video early on</td></tr>
+  <tr><td>Newsletters</td><td>Sponsor 1 dev newsletter per month</td><td>$300–500/mo</td><td>5K–130K subscribers per send</td></tr>
+  <tr><td>Bob Net launch</td><td>New press cycle — "Free AIM for devs"</td><td>$0 (organic)</td><td>Second HN/PH spike</td></tr>
+  <tr><td>Agent Bob Pro</td><td>Full launch — "One-click AI for Mac"</td><td>$0 (organic) + $200 ads</td><td>Third press spike + MRR starts</td></tr>
+  <tr><td>AppSumo</td><td>Lifetime deal ($49 one-time)</td><td>70% rev share to AppSumo</td><td>1,000–5,000 buyers in 2 weeks</td></tr>
+  <tr><td>Podcast</td><td>Appear on 2–3 indie/dev podcasts</td><td>$0</td><td>2K–20K listeners each</td></tr>
+  <tr><td>Referral program</td><td>Share link → both get $BOB</td><td>$BOB tokens (non-cash)</td><td>Viral organic loop</td></tr>
+  <tr><td>TikTok/Reels</td><td>1–2 short demos/week</td><td>$0</td><td>Unpredictable — can blow up</td></tr>
+</table>
+
+<div class="card">
+  <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#FFFF00;margin-bottom:12px;">Phase 3 Monthly Costs</div>
+  <div class="cost-row"><span class="cost-item">Newsletter sponsorships</span><span class="cost-price">$300–500/mo</span></div>
+  <div class="cost-row"><span class="cost-item">Twitter/X paid promotion</span><span class="cost-price">$100–200/mo</span></div>
+  <div class="cost-row"><span class="cost-item">Reddit ads</span><span class="cost-price">$100/mo</span></div>
+  <div class="cost-row"><span class="cost-item">Analytics + tools (Plausible, email)</span><span class="cost-price">$30–50/mo</span></div>
+  <div class="cost-row"><span class="cost-item">Railway relay server</span><span class="cost-price">$5–15/mo</span></div>
+  <div class="cost-row" style="border-top:1px solid #334155;margin-top:8px;padding-top:12px;"><span style="font-weight:700;color:#f1f5f9;">Total Phase 3</span><span class="cost-price">$535–$765/mo</span></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CHANNELS RANKED -->
+<h2>Channel Priority — Ranked by ROI for Bob</h2>
+<table>
+  <tr><th>#</th><th>Channel</th><th>Cost</th><th>Effort</th><th>Why</th></tr>
+  <tr><td>1</td><td>Hacker News — Show HN</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">Medium</span></td><td>Dev audience. Single front-page post = 500+ downloads in a day. Can't buy this.</td></tr>
+  <tr><td>2</td><td>r/macapps</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">Low</span></td><td>Most targeted Mac audience on the internet. Perfect fit.</td></tr>
+  <tr><td>3</td><td>Product Hunt</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">Medium</span></td><td>Credibility signal. Journalists check PH. Top 5 = press coverage.</td></tr>
+  <tr><td>4</td><td>TLDR Newsletter</td><td><span class="tag tag-paid">$300–500</span></td><td><span class="tag tag-effort">Low</span></td><td>130K dev subscribers. Single issue reaches your exact audience.</td></tr>
+  <tr><td>5</td><td>Twitter/X organic</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">Medium</span></td><td>Build in public. Transparency posts go viral in maker community.</td></tr>
+  <tr><td>6</td><td>Indie Hackers</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">Low</span></td><td>Maker audience. Monthly revenue updates get huge traction here.</td></tr>
+  <tr><td>7</td><td>TikTok / Reels</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">Medium</span></td><td>"I replaced $300/yr of apps with this free thing" format goes viral unpredictably.</td></tr>
+  <tr><td>8</td><td>AppSumo</td><td><span class="tag tag-paid">70% rev share</span></td><td><span class="tag tag-effort">Low</span></td><td>Instant 1K-5K buyers. Worth it for initial growth even at thin margin.</td></tr>
+  <tr><td>9</td><td>YouTube</td><td><span class="tag tag-free">Free</span></td><td><span class="tag tag-effort">High</span></td><td>Long-term SEO value. Discovery channel. Takes time to build.</td></tr>
+  <tr><td>10</td><td>Mac YouTubers (collab)</td><td><span class="tag tag-free">Free or gifted</span></td><td><span class="tag tag-effort">Medium</span></td><td>Single video from 100K-sub creator = massive burst. High variance.</td></tr>
+</table>
+
+<div class="divider"></div>
+
+<!-- TOTAL BUDGET -->
+<h2>Total 90-Day Budget</h2>
+<div class="grid2">
+  <div class="card">
+    <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#FFFF00;margin-bottom:16px;">Minimum (organic heavy)</div>
+    <div class="cost-row"><span class="cost-item">Phase 0 (pre-launch)</span><span class="cost-price">$50</span></div>
+    <div class="cost-row"><span class="cost-item">Phase 1 (launch week)</span><span class="cost-price">$0</span></div>
+    <div class="cost-row"><span class="cost-item">Phase 2 (post-launch)</span><span class="cost-price">$100</span></div>
+    <div class="cost-row"><span class="cost-item">Phase 3 (2 months)</span><span class="cost-price">$200</span></div>
+    <div class="cost-row" style="border-top:1px solid #334155;padding-top:12px;margin-top:8px;"><span style="font-weight:700;color:#FFFF00;font-size:16px;">Total</span><span class="cost-price" style="color:#FFFF00;font-size:18px;">~$350</span></div>
+  </div>
+  <div class="card">
+    <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#4ade80;margin-bottom:16px;">Recommended (with paid boost)</div>
+    <div class="cost-row"><span class="cost-item">Phase 0 (pre-launch)</span><span class="cost-price">$50</span></div>
+    <div class="cost-row"><span class="cost-item">Phase 1 (launch week)</span><span class="cost-price">$100</span></div>
+    <div class="cost-row"><span class="cost-item">Phase 2 (post-launch)</span><span class="cost-price">$700</span></div>
+    <div class="cost-row"><span class="cost-item">Phase 3 (2 months)</span><span class="cost-price">$1,200</span></div>
+    <div class="cost-row" style="border-top:1px solid #334155;padding-top:12px;margin-top:8px;"><span style="font-weight:700;color:#4ade80;font-size:16px;">Total</span><span class="cost-price" style="color:#4ade80;font-size:18px;">~$2,050</span></div>
+  </div>
+</div>
+
+<div class="hl" style="margin-top:24px;">
+  <div style="font-size:14px;font-weight:700;color:#FFFF00;margin-bottom:6px;">Revenue vs. Spend</div>
+  <div style="font-size:13px;color:#94a3b8;line-height:1.7;">
+    Agent Bob Pro at $9.99/mo: 50 users = $500/mo, 200 users = $2K/mo, 500 users = $5K/mo.<br>
+    Break-even on marketing spend happens at ~200 Agent Bob Pro subscribers.<br>
+    TLDR newsletter sponsorship alone ($400) typically delivers 50–200 signups for a strong product. Single-issue ROI is positive if 5% convert to $9.99/mo.
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="divider"></div>
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+  <div class="logo"><span>bob</span></div>
+  <a href="index.html" style="font-size:12px;color:#475569;">← Back to Pitch Deck</a>
+  <div style="font-size:12px;color:#334155;">Marketing Plan v1 · 90 days · $350–$2,050</div>
+</div>
+
+</div>
+</body>
+</html>
