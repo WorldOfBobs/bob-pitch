@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>bob — Investor Deck</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0a0a0f; color:#f1f5f9; font-family:'Space Grotesk',sans-serif; }
+  .deck { max-width:960px; margin:0 auto; padding:64px 48px; }
+  .slide { margin-bottom:72px; padding-bottom:72px; border-bottom:1px solid #1e293b; }
+  .slide:last-child { border-bottom:none; }
+  .slide-num { font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:#FFFF00; margin-bottom:8px; }
+  .slide-title { font-size:32px; font-weight:900; letter-spacing:-1px; color:#f1f5f9; margin-bottom:6px; line-height:1.1; }
+  .slide-sub { font-size:13px; color:#475569; margin-bottom:28px; }
+  .points { display:flex; flex-direction:column; gap:10px; }
+  .point { display:flex; gap:12px; align-items:flex-start; }
+  .dot { width:6px; height:6px; background:#FFFF00; border-radius:50%; margin-top:6px; flex-shrink:0; }
+  .point-text { font-size:15px; color:#cbd5e1; line-height:1.5; }
+  .point-text strong { color:#f1f5f9; font-weight:700; }
+  .point-text em { color:#FFFF00; font-style:normal; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .col-card { background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:24px; }
+  .col-title { font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#FFFF00; margin-bottom:16px; }
+  .highlight-box { background:#FFFF0010; border:1px solid #FFFF0030; border-radius:12px; padding:20px 24px; }
+  .big-stat { font-size:42px; font-weight:900; color:#FFFF00; line-height:1; }
+  .stat-label { font-size:13px; color:#64748b; margin-top:4px; }
+  .tag { display:inline-block; background:#FFFF0015; border:1px solid #FFFF0040; color:#FFFF00; font-size:10px; font-weight:700; padding:3px 9px; border-radius:5px; margin:2px; }
+  .logo { position:relative; display:inline-flex; align-items:center; justify-content:center; width:80px; height:30px; background:#FFFF00; border-radius:7px; }
+  .logo::after { content:''; position:absolute; inset:4px; background:#0a0a0f; border-radius:3px; }
+  .logo span { position:relative; z-index:1; font-weight:900; font-size:14px; color:#FFFF00; letter-spacing:-0.5px; }
+  .mono-table { width:100%; border-collapse:collapse; }
+  .mono-table td { padding:10px 12px; font-size:13px; border-bottom:1px solid #1e293b; }
+  .mono-table td:first-child { color:#94a3b8; font-weight:600; width:200px; }
+  .mono-table td:last-child { color:#f1f5f9; }
+  .mono-table tr:last-child td { border-bottom:none; }
+  .phase { background:#0f172a; border-left:3px solid #FFFF00; border-radius:0 10px 10px 0; padding:14px 18px; margin-bottom:10px; }
+  .phase-label { font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#FFFF00; margin-bottom:4px; }
+  .phase-text { font-size:14px; color:#cbd5e1; }
+  .mrr-row { display:flex; align-items:center; gap:16px; margin-bottom:12px; }
+  .mrr-label { font-size:13px; color:#94a3b8; width:180px; flex-shrink:0; }
+  .mrr-bar { flex:1; height:8px; background:#1e293b; border-radius:4px; overflow:hidden; }
+  .mrr-fill { height:100%; background:linear-gradient(90deg,#FFFF00,#aaaa00); border-radius:4px; }
+  .mrr-value { font-size:13px; color:#FFFF00; font-weight:700; width:80px; text-align:right; flex-shrink:0; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- Header -->
+  <div style="margin-bottom:72px; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px;">
+    <div>
+      <div class="logo"><span>bob</span></div>
+      <div style="font-size:42px; font-weight:900; letter-spacing:-2px; margin-top:16px; line-height:1;">Board</div>
+      <div style="font-size:16px; color:#64748b; margin-top:8px;">Investor Deck — 2026 · Confidential</div>
+    </div>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start;">
+      <div style="text-align:center;"><div class="big-stat">100M+</div><div class="stat-label">Mac users globally</div></div>
+      <div style="text-align:center;"><div class="big-stat">$0</div><div class="stat-label">cost to users</div></div>
+      <div style="text-align:center;"><div class="big-stat">MIT</div><div class="stat-label">open source</div></div>
+    </div>
+  </div>
+
+  <!-- 01 Problem -->
+  <div class="slide">
+    <div class="slide-num">01 — Problem</div>
+    <div class="slide-title">Mac power is locked behind paywalls and steep learning curves.</div>
+    <div class="slide-sub">100 million Mac users. Most of them barely using what they paid for.</div>
+    <div class="points">
+      <div class="point"><div class="dot"></div><div class="point-text">The tools developers need — clipboard managers, color pickers, file converters, window managers — are <strong>sold separately at $20–40 each</strong>, totaling $300+/year</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">The best launcher on the market, Raycast, charges <strong>$96/year</strong> and still requires technical knowledge to get meaningful value from it</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Non-technical users — the majority of Mac owners — have <strong>no accessible tools</strong> for automation, productivity, or customization</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Every solution requires cloud accounts, API keys, subscriptions, or a learning curve most people don't have the patience for</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>The market has optimized for power users willing to pay.</strong> Nobody is building for everyone else — and everyone else is 80% of the market.</div></div>
+    </div>
+  </div>
+
+  <!-- 02 Solution -->
+  <div class="slide">
+    <div class="slide-num">02 — Solution</div>
+    <div class="slide-title">Bob Board — free, local, open source. One launcher. 12 tools.</div>
+    <div class="slide-sub">The first modern Mac launcher built for everyone, not just power users.</div>
+    <div class="highlight-box" style="margin-bottom:24px;">
+      <div style="font-size:17px; font-weight:800; color:#FFFF00; margin-bottom:6px;">"12 Mac tools devs actually use — local, free, open source, zero setup."</div>
+      <div style="font-size:13px; color:#94a3b8;">One hotkey. Every tool immediately available. Nothing leaves the machine.</div>
+    </div>
+    <div class="cols">
+      <div class="col-card">
+        <div class="col-title">Phase 1 — Bob Board (Now)</div>
+        <div class="points">
+          <div class="point"><div class="dot"></div><div class="point-text">12 local Mac utilities in one launcher</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Global hotkey, fuzzy search, AI chat (Ollama)</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Open source, MIT licensed, free forever</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Zero accounts, zero cloud, zero setup</div></div>
+        </div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Phase 2 — Network (30–60 days)</div>
+        <div class="points">
+          <div class="point"><div class="dot"></div><div class="point-text">Agent Bob Pro — local AI at $9.99/month</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Bob Net — P2P messaging built into the launcher</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Username claims, premium features</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Monetization layer activates after adoption</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 Market -->
+  <div class="slide">
+    <div class="slide-num">03 — Market Opportunity</div>
+    <div class="slide-title">A large, underserved market with a clear wedge.</div>
+    <div class="cols" style="margin-bottom:24px;">
+      <div style="text-align:center; background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:28px;">
+        <div class="big-stat">100M+</div>
+        <div class="stat-label">Mac users globally (Apple, 2024)</div>
+        <div style="font-size:12px; color:#334155; margin-top:8px;">Total addressable market</div>
+      </div>
+      <div style="text-align:center; background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:28px;">
+        <div class="big-stat">~30M</div>
+        <div class="stat-label">Mac users who are developers or power users</div>
+        <div style="font-size:12px; color:#334155; margin-top:8px;">Primary launch market</div>
+      </div>
+    </div>
+    <div class="points">
+      <div class="point"><div class="dot"></div><div class="point-text">Mac productivity tools (launchers, utilities, automation) is a <strong>$2B+ market</strong> — Raycast, Alfred, CleanShot, TextExpander, and dozens more</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">The free-to-premium conversion funnel is proven — open source tools (VS Code, Obsidian) capture massive user bases then monetize the 5–10% who want more</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Agent Bob Pro targets the AI subscription market — growing at 40%+ annually. Local AI is an emerging category with no dominant consumer player yet.</div></div>
+    </div>
+  </div>
+
+  <!-- 04 Traction -->
+  <div class="slide">
+    <div class="slide-num">04 — Traction</div>
+    <div class="slide-title">Built and shipping. Not a concept.</div>
+    <div class="points">
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>12 production-ready Mac apps</strong> — fully functional, packaged, tested. Not mockups.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>Open source on GitHub</strong> — public, auditable, ready for community contributions</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>Marketing site live</strong> — bobbrowser.com with download and documentation</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Launch coordinated across <em>Show HN</em>, <em>Product Hunt</em>, and <em>r/macapps</em> — channels where 100K+ relevant users are active daily</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Community pre-building before launch — ambassadors, testers, content creators across multiple countries ready to activate on launch day</div></div>
+    </div>
+  </div>
+
+  <!-- 05 Competition -->
+  <div class="slide">
+    <div class="slide-num">05 — Competition</div>
+    <div class="slide-title">We're the only free, modern, open source option.</div>
+    <table class="mono-table" style="margin-bottom:24px;">
+      <tr><td>Raycast</td><td>$96/yr · Mac only · Powerful but requires setup · Going increasingly paid</td></tr>
+      <tr><td>Alfred</td><td>$34 one-time · Old UI · No AI · No network effect</td></tr>
+      <tr><td>Spotlight</td><td>Free · App launch and file search only. No utilities.</td></tr>
+      <tr><td>Bunch / Automator</td><td>Built-in · Requires scripting knowledge · Zero adoption outside power users</td></tr>
+      <tr><td>Open Interpreter</td><td>Local AI, but CLI-only · Zero consumer UX · Dev tool, not a product</td></tr>
+    </table>
+    <div class="highlight-box">
+      <div style="font-size:14px; font-weight:700; color:#f1f5f9; margin-bottom:8px;">The gap Bob fills: modern UI + local-first + free + no setup + open source.</div>
+      <div style="font-size:13px; color:#94a3b8;">No competitor checks all five. Raycast comes closest — but they're paid and closed source. That's the opening.</div>
+    </div>
+  </div>
+
+  <!-- 06 Business Model -->
+  <div class="slide">
+    <div class="slide-num">06 — Business Model</div>
+    <div class="slide-title">Free drives adoption. Network drives revenue.</div>
+    <div class="slide-sub">Proven playbook: VS Code, Obsidian, Figma — free core, paid premium layer.</div>
+    <table class="mono-table" style="margin-bottom:28px;">
+      <tr><td>Free tier (core)</td><td>12 apps + Ollama AI chat — genuinely useful, zero cost to us</td></tr>
+      <tr><td>Agent Bob Pro · $9.99/mo</td><td>Claude-powered AI agent for Mac — ~$2 API cost = ~$8 margin/user</td></tr>
+      <tr><td>Custom username · $2.99</td><td>One-time, zero marginal cost, filters spam accounts</td></tr>
+      <tr><td>Bob Net relay · $9.99/mo</td><td>Private relay hosting for teams and businesses</td></tr>
+      <tr><td>Storage upgrade · $0.99/mo</td><td>File relay storage for heavy users</td></tr>
+    </table>
+    <div style="margin-bottom:16px;">
+      <div class="mrr-row"><div class="mrr-label">500 Agent Bob Pro users</div><div class="mrr-bar"><div class="mrr-fill" style="width:15%"></div></div><div class="mrr-value">$5K MRR</div></div>
+      <div class="mrr-row"><div class="mrr-label">2,000 subscribers</div><div class="mrr-bar"><div class="mrr-fill" style="width:40%"></div></div><div class="mrr-value">$20K MRR</div></div>
+      <div class="mrr-row"><div class="mrr-label">10,000 subscribers</div><div class="mrr-bar"><div class="mrr-fill" style="width:100%"></div></div><div class="mrr-value">$100K MRR</div></div>
+    </div>
+    <div class="highlight-box">
+      <div style="font-size:13px; color:#94a3b8;"><strong style="color:#FFFF00;">Key metric:</strong> 5% free-to-paid conversion is the Obsidian benchmark. At 200,000 free users (achievable with one strong HN post), that's 10,000 paid — <strong style="color:#f1f5f9;">$100K MRR</strong> from Agent Bob Pro alone.</div>
+    </div>
+  </div>
+
+  <!-- 07 Moats -->
+  <div class="slide">
+    <div class="slide-num">07 — Defensibility</div>
+    <div class="slide-title">Why this doesn't get killed by Raycast adding one feature.</div>
+    <div class="cols">
+      <div class="col-card">
+        <div class="col-title">Open Source Community</div>
+        <div style="font-size:13px; color:#94a3b8; line-height:1.6;">Raycast can't out-open-source us. Every contributor is a distribution channel. GitHub stars compound. A large open source project is very hard to replicate — it takes years to build.</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Network Effect (Phase 2)</div>
+        <div style="font-size:13px; color:#94a3b8; line-height:1.6;">Bob Net creates social lock-in. Your contacts, your handle, your history — in the launcher. Switching means leaving your network. Raycast has no social layer to copy.</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Price Moat</div>
+        <div style="font-size:13px; color:#94a3b8; line-height:1.6;">Raycast can't go free — they have 60 employees and a SaaS business model. We can stay free because the core is community-supported. Our pricing strategy is structurally impossible for them to match.</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Speed of Shipping</div>
+        <div style="font-size:13px; color:#94a3b8; line-height:1.6;">12 apps built in weeks. Lean team moves faster than any VC-funded competitor. By the time Raycast adds local AI, we'll have shipped the next three phases.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 08 Roadmap -->
+  <div class="slide">
+    <div class="slide-num">08 — Roadmap</div>
+    <div class="slide-title">Three waves. Each its own press cycle.</div>
+    <div class="phase"><div class="phase-label">Wave 1 — Bob Board (Launch)</div><div class="phase-text">12 free tools · Open source · Show HN + Product Hunt · Community building · First 10K users</div></div>
+    <div class="phase"><div class="phase-label">Wave 2 — Bob Net (30–60 days)</div><div class="phase-text">P2P messaging inside the launcher · Username claims · File transfers · Network revenue begins</div></div>
+    <div class="phase"><div class="phase-label">Wave 3 — Agent Bob Pro (60–90 days)</div><div class="phase-text">Claude-powered AI agent · $9.99/mo · MRR growth · Windows compatibility · AppSumo campaign</div></div>
+    <div style="margin-top:24px;" class="highlight-box">
+      <div style="font-size:14px; font-weight:700; color:#f1f5f9; margin-bottom:6px;">Three separate press moments. Three separate growth spikes.</div>
+      <div style="font-size:13px; color:#94a3b8;">Each launch wave builds on the user base from the last. The community compounds.</div>
+    </div>
+  </div>
+
+  <!-- 09 The Ask -->
+  <div class="slide">
+    <div class="slide-num">09 — The Ask</div>
+    <div class="slide-title">What we're looking for.</div>
+    <div class="slide-sub">We're not raising to survive. We're raising to accelerate.</div>
+    <div class="cols">
+      <div class="col-card">
+        <div class="col-title">Use of Funds</div>
+        <div class="points">
+          <div class="point"><div class="dot"></div><div class="point-text">Server infrastructure for Bob Net relay</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Marketing spend — newsletter placements, KOL partnerships</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">AppSumo campaign production for Agent Bob Pro</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Windows port development</div></div>
+        </div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">What We Don't Need</div>
+        <div class="points">
+          <div class="point"><div class="dot"></div><div class="point-text">Big team — lean by design</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Office — fully remote, always</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Brand spend — open source community does it</div></div>
+          <div class="point"><div class="dot"></div><div class="point-text">Long runway — 12 apps already built and shipping</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box" style="margin-top:24px;">
+      <div style="font-size:15px; color:#cbd5e1; line-height:1.6;"><strong style="color:#FFFF00;">The product exists. The community is forming. The playbook is written.</strong> We're looking for someone who understands that distribution, not product, is the hard part — and wants to help us solve it.</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="display:flex; justify-content:space-between; align-items:center; padding-top:32px; border-top:1px solid #1e293b; flex-wrap:wrap; gap:16px;">
+    <div class="logo"><span>bob</span></div>
+    <div style="font-size:12px; color:#334155;">bobbrowser.com · <a href="index.html" style="color:#FFFF00;">→ Phase 1 Deck</a> · <a href="marketing.html" style="color:#FFFF00;">→ Marketing Plan</a></div>
+  </div>
+
+</div>
+</body>
+</html>

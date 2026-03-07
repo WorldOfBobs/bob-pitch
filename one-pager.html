@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>bob — One Pager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0a0a0f; color:#f1f5f9; font-family:'Space Grotesk',sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+  .page { max-width:680px; width:100%; }
+  .logo { position:relative; display:inline-flex; align-items:center; justify-content:center; width:72px; height:28px; background:#FFFF00; border-radius:6px; margin-bottom:32px; }
+  .logo::after { content:''; position:absolute; inset:4px; background:#0a0a0f; border-radius:2px; }
+  .logo span { position:relative; z-index:1; font-weight:900; font-size:13px; color:#FFFF00; letter-spacing:-0.5px; }
+  h1 { font-size:52px; font-weight:900; letter-spacing:-2px; line-height:1.05; margin-bottom:20px; }
+  h1 span { color:#FFFF00; }
+  .sub { font-size:18px; color:#64748b; line-height:1.6; margin-bottom:40px; max-width:520px; }
+  .pills { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px; }
+  .pill { background:#0f172a; border:1px solid #1e293b; border-radius:999px; padding:8px 16px; font-size:14px; font-weight:600; color:#cbd5e1; }
+  .pill.hot { background:#FFFF0015; border-color:#FFFF0040; color:#FFFF00; }
+  .tools { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:40px; }
+  @media(max-width:480px) { .tools { grid-template-columns:repeat(2,1fr); } h1 { font-size:36px; } }
+  .tool { background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px; text-align:center; }
+  .tool-e { font-size:22px; margin-bottom:6px; }
+  .tool-n { font-size:11px; font-weight:700; color:#94a3b8; }
+  .divider { height:1px; background:#1e293b; margin:36px 0; }
+  .stat-row { display:flex; gap:24px; flex-wrap:wrap; margin-bottom:40px; }
+  .stat { flex:1; min-width:120px; }
+  .stat-num { font-size:36px; font-weight:900; color:#FFFF00; line-height:1; }
+  .stat-lbl { font-size:12px; color:#475569; margin-top:4px; }
+  .quote { background:#FFFF0010; border:1px solid #FFFF0025; border-radius:12px; padding:20px 24px; margin-bottom:36px; font-size:16px; font-weight:700; color:#f1f5f9; line-height:1.5; }
+  .quote span { color:#FFFF00; }
+  .fomo { font-size:13px; color:#475569; margin-bottom:24px; line-height:1.6; }
+  .fomo strong { color:#f1f5f9; }
+  .cta { display:inline-block; background:#FFFF00; color:#0a0a0f; font-weight:900; font-size:17px; padding:16px 36px; border-radius:10px; text-decoration:none; margin-bottom:20px; }
+  .links { font-size:13px; color:#334155; }
+  .links a { color:#FFFF00; text-decoration:none; margin:0 8px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="logo"><span>bob</span></div>
+
+  <h1>The Mac tools<br>you <span>actually use.</span><br>Free. Forever.</h1>
+
+  <p class="sub">One launcher. 12 built-in tools. Runs entirely on your computer. No cloud, no subscription, no account. Just works.</p>
+
+  <div class="pills">
+    <div class="pill hot">🆓 Free forever</div>
+    <div class="pill hot">🔒 100% local</div>
+    <div class="pill hot">⚡ Open source</div>
+    <div class="pill">Color picker</div>
+    <div class="pill">Clipboard history</div>
+    <div class="pill">File converter</div>
+    <div class="pill">Password gen</div>
+    <div class="pill">+8 more</div>
+  </div>
+
+  <div class="tools">
+    <div class="tool"><div class="tool-e">🎨</div><div class="tool-n">Color Bob</div></div>
+    <div class="tool"><div class="tool-e">📋</div><div class="tool-n">Clipboard Bob</div></div>
+    <div class="tool"><div class="tool-e">📥</div><div class="tool-n">Drop Zone Bob</div></div>
+    <div class="tool"><div class="tool-e">🔑</div><div class="tool-n">Passgen Bob</div></div>
+    <div class="tool"><div class="tool-e">🧮</div><div class="tool-n">Calc Bob</div></div>
+    <div class="tool"><div class="tool-e">🔤</div><div class="tool-n">Font Bob</div></div>
+    <div class="tool"><div class="tool-e">✂️</div><div class="tool-n">Snippets Bob</div></div>
+    <div class="tool"><div class="tool-e">📱</div><div class="tool-n">QR Bob</div></div>
+    <div class="tool"><div class="tool-e">⌨️</div><div class="tool-n">Shortcut Bob</div></div>
+    <div class="tool"><div class="tool-e">🪟</div><div class="tool-n">Window Bob</div></div>
+    <div class="tool"><div class="tool-e">🕐</div><div class="tool-n">Clock Bob</div></div>
+    <div class="tool"><div class="tool-e">📸</div><div class="tool-n">Screenshot Bob</div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="stat-num">12</div><div class="stat-lbl">tools in one launcher</div></div>
+    <div class="stat"><div class="stat-num">$0</div><div class="stat-lbl">forever, not a trial</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">accounts needed</div></div>
+    <div class="stat"><div class="stat-num">MIT</div><div class="stat-lbl">open source</div></div>
+  </div>
+
+  <div class="quote">"Raycast charges <span>$96/year.</span> Alfred charges $34. CleanShot, Paste, ColorSnapper — another $80+. Bob replaces all of them. <span>At $0.</span>"</div>
+
+  <p class="fomo">People are already switching. The dev community moves fast — <strong>Show HN and Product Hunt launch this week.</strong> The people who find it first are the ones who tell everyone else. Be that person.</p>
+
+  <div>
+    <a class="cta" href="https://bobbrowser.com">Download Bob Board →</a>
+  </div>
+  <br>
+  <div class="links">
+    <a href="https://bobbrowser.com">bobbrowser.com</a>·
+    <a href="index.html">Full deck</a>·
+    <a href="community.html">Community</a>·
+    <a href="https://github.com/WorldOfBobs">GitHub</a>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>bob — Join the Movement</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0a0a0f; color:#f1f5f9; font-family:'Space Grotesk',sans-serif; }
+  .deck { max-width:960px; margin:0 auto; padding:64px 48px; }
+  .slide { margin-bottom:72px; padding-bottom:72px; border-bottom:1px solid #1e293b; }
+  .slide:last-child { border-bottom:none; }
+  .slide-num { font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:#FFFF00; margin-bottom:8px; }
+  .slide-title { font-size:32px; font-weight:900; letter-spacing:-1px; color:#f1f5f9; margin-bottom:6px; line-height:1.1; }
+  .slide-sub { font-size:15px; color:#64748b; margin-bottom:28px; line-height:1.6; }
+  .points { display:flex; flex-direction:column; gap:12px; }
+  .point { display:flex; gap:12px; align-items:flex-start; }
+  .dot { width:6px; height:6px; background:#FFFF00; border-radius:50%; margin-top:7px; flex-shrink:0; }
+  .point-text { font-size:15px; color:#cbd5e1; line-height:1.6; }
+  .point-text strong { color:#f1f5f9; font-weight:700; }
+  .point-text em { color:#FFFF00; font-style:normal; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .cols3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+  .col-card { background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:24px; }
+  .col-title { font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#FFFF00; margin-bottom:12px; }
+  .highlight-box { background:#FFFF0010; border:1px solid #FFFF0030; border-radius:12px; padding:24px 28px; }
+  .big-stat { font-size:42px; font-weight:900; color:#FFFF00; line-height:1; }
+  .stat-label { font-size:13px; color:#64748b; margin-top:4px; }
+  .logo { position:relative; display:inline-flex; align-items:center; justify-content:center; width:80px; height:30px; background:#FFFF00; border-radius:7px; }
+  .logo::after { content:''; position:absolute; inset:4px; background:#0a0a0f; border-radius:3px; }
+  .logo span { position:relative; z-index:1; font-weight:900; font-size:14px; color:#FFFF00; letter-spacing:-0.5px; }
+  .role-card { background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:24px; text-align:center; }
+  .role-emoji { font-size:36px; margin-bottom:12px; }
+  .role-title { font-size:16px; font-weight:800; color:#FFFF00; margin-bottom:8px; }
+  .role-desc { font-size:13px; color:#94a3b8; line-height:1.6; }
+  .task-item { display:flex; align-items:center; gap:12px; padding:12px 16px; background:#0f172a; border:1px solid #1e293b; border-radius:8px; margin-bottom:8px; }
+  .task-check { width:20px; height:20px; border-radius:50%; background:#FFFF0020; border:1.5px solid #FFFF00; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:11px; color:#FFFF00; font-weight:700; }
+  .task-text { font-size:14px; color:#cbd5e1; }
+  .task-text span { color:#FFFF00; font-weight:600; }
+  .big-quote { font-size:28px; font-weight:900; color:#fff; line-height:1.3; letter-spacing:-0.5px; margin-bottom:16px; }
+  .cta-btn { display:inline-block; background:#FFFF00; color:#0a0a0f; font-weight:900; font-size:16px; padding:16px 32px; border-radius:10px; text-decoration:none; margin-top:16px; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- Header -->
+  <div style="margin-bottom:72px;">
+    <div class="logo"><span>bob</span></div>
+    <div style="font-size:48px; font-weight:900; letter-spacing:-2px; margin-top:16px; line-height:1;">We're building something big.<br><span style="color:#FFFF00;">Get in early.</span></div>
+    <div style="font-size:16px; color:#64748b; margin-top:16px; max-width:600px; line-height:1.6;">Bob Board is a free, open source Mac launcher with 12 built-in tools. We're building the team that makes it go viral. No money needed — just your energy, your ideas, and your network.</div>
+  </div>
+
+  <!-- 01 What We Built -->
+  <div class="slide">
+    <div class="slide-num">01 — What We Built</div>
+    <div class="slide-title">12 free Mac tools. One launcher. No cloud. No subscription.</div>
+    <div class="slide-sub">People pay $300+ per year for the tools we're giving away free. We built them all in weeks. Now we need to make sure the world finds out.</div>
+    <div class="cols" style="margin-bottom:24px;">
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">🎨 Color Bob — screen color picker</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">📋 Clipboard Bob — clipboard history</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">📥 Drop Zone Bob — file converter</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">🔑 Passgen Bob — password generator</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">🧮 Calc Bob — calculator</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">🔤 Font Bob — font browser</div></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">✂️ Snippets Bob — text snippets</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">📱 QR Bob — QR code generator</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">⌨️ Shortcut Bob — hotkey manager</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">🪟 Window Bob — window manager</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">🕐 Clock Bob — world clock</div></div>
+        <div class="task-item"><div class="task-check">✓</div><div class="task-text">📸 Screenshot Bob — screen capture</div></div>
+      </div>
+    </div>
+    <div class="highlight-box">
+      <div style="font-size:15px; color:#cbd5e1;">All of this runs <strong style="color:#fff;">100% on your computer</strong>. No accounts. No data sent anywhere. No subscription. <em style="color:#FFFF00;">Just works.</em></div>
+    </div>
+  </div>
+
+  <!-- 02 Why This Matters -->
+  <div class="slide">
+    <div class="slide-num">02 — Why This Matters</div>
+    <div class="slide-title">Free tools change the game for people who couldn't afford to play.</div>
+    <div class="slide-sub">Most productivity software is priced for Silicon Valley salaries. We're building for everyone.</div>
+    <div class="points">
+      <div class="point"><div class="dot"></div><div class="point-text">Raycast charges <strong>$96/year</strong>. Alfred charges $34. CleanShot is $30. Paste is $30. It adds up — and most people just go without.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Bob replaces all of them. <em>For free. Forever.</em> MIT licensed — the code belongs to the community.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">This is the kind of tool that levels the playing field. A developer in Lagos gets the same setup as a developer in San Francisco.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>We're not building for a niche. We're building for everyone with a Mac.</strong> That's 100 million people who don't have a tool like this yet.</div></div>
+    </div>
+  </div>
+
+  <!-- 03 Roles -->
+  <div class="slide">
+    <div class="slide-num">03 — Your Role</div>
+    <div class="slide-title">No money. Just your time, skills, and voice.</div>
+    <div class="slide-sub">The community that launches Bob Board with us becomes part of the story. Here's how you can contribute — pick what fits you.</div>
+    <div class="cols" style="margin-bottom:20px;">
+      <div class="role-card">
+        <div class="role-emoji">🧪</div>
+        <div class="role-title">Beta Tester</div>
+        <div class="role-desc">Download the app, break it, report what you find. Real feedback from real users is more valuable than any QA team. We need honest opinions — not hype.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-emoji">📢</div>
+        <div class="role-title">Ambassador</div>
+        <div class="role-desc">Post about Bob Board. Share it with your network. Post in Facebook groups, Twitter, LinkedIn, WhatsApp communities, Reddit. One genuine post from a real person beats any ad.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-emoji">🎬</div>
+        <div class="role-title">Content Creator</div>
+        <div class="role-desc">Make a short video showing one Bob tool in action. A 60-second demo of Color Bob or Clipboard Bob gets more downloads than a press release. You don't need a studio.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-emoji">💬</div>
+        <div class="role-title">Community Mod</div>
+        <div class="role-desc">Help manage the Discord. Welcome new members, answer basic questions, keep the vibe positive. The first 100 users set the culture — you help shape it.</div>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="role-card">
+        <div class="role-emoji">🌍</div>
+        <div class="role-title">Translator</div>
+        <div class="role-desc">Help translate the website and app descriptions into your language. Software that speaks someone's language gets installed. French, Yoruba, Igbo, Hausa — all valuable.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-emoji">🛠️</div>
+        <div class="role-title">Developer</div>
+        <div class="role-desc">If you code — even a little — there's something for you. Open issues on GitHub, suggest features, help fix bugs. This is open source. Your name goes in the commit history.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 What You Get -->
+  <div class="slide">
+    <div class="slide-num">04 — What You Get</div>
+    <div class="slide-title">Early is always better.</div>
+    <div class="slide-sub">The people who show up before something blows up are the ones who become part of the story.</div>
+    <div class="points">
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>Early adopter status</strong> — you'll be in the first wave. The founding community. That matters when Bob Board has 100,000 users and you were there at zero.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>Recognition</strong> — contributors get credited. Your name, your handle, your country — on the site, in the docs, in the changelog.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>Direct access</strong> — you talk to the people building it. Feature requests from the core community get heard first. You shape what gets built next.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>A free tool that actually helps you</strong> — use it every day. It's built for people who work on computers. That's you.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><em>And when Bob grows into something bigger — the people who were here first, who helped spread it, are the ones who benefit most from that growth.</em></div></div>
+    </div>
+  </div>
+
+  <!-- 05 Tasks You Can Do Right Now -->
+  <div class="slide">
+    <div class="slide-num">05 — Start Here</div>
+    <div class="slide-title">Things you can do today. Zero cost.</div>
+    <div style="margin-bottom:8px;">
+      <div class="task-item"><div class="task-check">1</div><div class="task-text"><span>Download Bob Board</span> — install it, use it for a day, tell us what you think</div></div>
+      <div class="task-item"><div class="task-check">2</div><div class="task-text"><span>Star the GitHub repo</span> — takes 2 seconds, helps Bob rank in searches</div></div>
+      <div class="task-item"><div class="task-check">3</div><div class="task-text"><span>Post one thing</span> — a screenshot, a reaction, a recommendation in any community you're in</div></div>
+      <div class="task-item"><div class="task-check">4</div><div class="task-text"><span>Join the Discord</span> — introduce yourself, say what role fits you</div></div>
+      <div class="task-item"><div class="task-check">5</div><div class="task-text"><span>Find one friend with a Mac</span> — send them the link. That's it. You just grew the community by one.</div></div>
+      <div class="task-item"><div class="task-check">6</div><div class="task-text"><span>Record a 60-second screen demo</span> — no editing needed. Show one tool doing something useful. Post it anywhere.</div></div>
+      <div class="task-item"><div class="task-check">7</div><div class="task-text"><span>Post on Product Hunt on launch day</span> — upvote, leave a review. Coordinated community support on launch day moves the needle massively.</div></div>
+    </div>
+  </div>
+
+  <!-- 06 The Vision -->
+  <div class="slide">
+    <div class="slide-num">06 — The Vision</div>
+    <div class="slide-title">This is just the beginning.</div>
+    <div class="slide-sub">Bob Board is Phase 1. The people helping build this community are part of something that's going to grow into a lot more.</div>
+    <div class="highlight-box" style="margin-bottom:28px;">
+      <div class="big-quote">"Free tools. Open source. Built for everyone.<br>Not just people who can afford $96/year."</div>
+      <div style="font-size:14px; color:#94a3b8;">That's the mission. Simple. Worth building. Worth spreading.</div>
+    </div>
+    <div class="points">
+      <div class="point"><div class="dot"></div><div class="point-text">The community you build with us today is the foundation everything else grows on</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text">Your voice, your content, your network — that's the marketing budget. And it's more powerful than any ad spend.</div></div>
+      <div class="point"><div class="dot"></div><div class="point-text"><strong>We're not asking you to invest money. We're asking you to invest belief.</strong></div></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="text-align:center; padding:48px 0;">
+    <div class="logo" style="margin:0 auto 24px;"><span>bob</span></div>
+    <div style="font-size:24px; font-weight:900; margin-bottom:8px;">Ready to be part of it?</div>
+    <div style="font-size:15px; color:#64748b; margin-bottom:24px;">Download Bob Board. Join the Discord. Tell one person.</div>
+    <div style="font-size:13px; color:#475569;">bobbrowser.com</div>
+  </div>
+
+  <!-- Footer -->
+  <div style="display:flex; justify-content:space-between; align-items:center; padding-top:32px; border-top:1px solid #1e293b; flex-wrap:wrap; gap:16px;">
+    <div class="logo"><span>bob</span></div>
+    <div style="font-size:12px; color:#334155;">bobbrowser.com · <a href="index.html" style="color:#FFFF00;">→ Full Deck</a> · <a href="marketing.html" style="color:#FFFF00;">→ Marketing Plan</a></div>
+  </div>
+
+</div>
+</body>
+</html>
